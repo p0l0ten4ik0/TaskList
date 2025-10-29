@@ -2,11 +2,9 @@
   <div class="app">
     <h1>Список дел</h1>
     <div class="tasks">
-      <TaskItem
-        v-for="task in tasks"
+      <TaskItem v-for="task in tasks"
         :key="task.id"
-        :task="task"
-      />
+        :task="task"/>
     </div>
   </div>
 </template>
@@ -22,14 +20,15 @@ const tasks: ITask[] = tasksData
 <style scoped>
 .app {
   padding: 20px;
+  text-align: center;
   font-family: sans-serif;
-  max-width: 600px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
 .tasks {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: string;
+  gap: 15px;
 }
 </style>
